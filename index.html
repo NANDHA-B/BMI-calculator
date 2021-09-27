@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI CALCULATOR</title>
+    <style type="text/css">
+        .default{
+            color: rgb(240, 10, 10);
+        }
+        .changedClass{
+            color: rgb(9, 216, 19);
+            font-size: x-large;
+            display: block;
+        }
+    </style>
+    <link rel="stylesheet" href="style.css" >
+</head>
+<body style="background-color: rgb(0, 238, 255);">
+    <h1 style="color: #748080;">BMI CALCULATOR</h1>
+        <div>
+            <label class="input-label">Weight</label>
+            <input type="text" id="weight-kgs" class="input" placeholder="weight in kgs">
+        </div>
+        <div>
+            <label class="input-label">Height</label>
+            <input type="text" id="height-cms" class="input" placeholder="height in cm">
+        </div>
+        <button id="submit-btn" class="btn-check">Tell Me!!</button>
+
+      <h4 id="output-box" class="output"></h4>
+      <div id="uw" class="default">
+      <h3>Underweight   lessthan 18.5</h3></div>
+      <div id="norm" class="default">
+      <h3>Normal        18.5-24.9</h3></div>
+      <div id="ow" class="default">
+      <h3>Overweight    25-29.9</h3></div>
+      <div id="obs" class="default">
+      <h3>Obese         30 or greater</h3></div>
+
+    <script src="main.js"></script>
+</body>
+</html>
